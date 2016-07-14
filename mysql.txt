@@ -56,3 +56,9 @@ SELECT * FROM favorite_song;
 TRUNCATE favorite_food
 
 
+CRUD = {
+	CREATE
+	R?
+	UPLOAD
+	DELETE
+}
