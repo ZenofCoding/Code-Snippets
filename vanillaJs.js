@@ -116,3 +116,4 @@ player2.logDetails();
 
 //DOM Code
 
+dom code

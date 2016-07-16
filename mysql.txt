@@ -62,3 +62,4 @@ CRUD = {
 	UPLOAD
 	DELETE
 }
+new line
