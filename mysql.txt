@@ -63,3 +63,8 @@ CRUD = {
 	DELETE
 }
 new line
+
+//to start my sql
+mysql -u root -p
+
+//insert postman code here
