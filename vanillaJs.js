@@ -118,3 +118,4 @@ player2.logDetails();
 
 dom code
 Work on Lynda DOM CODE
+Need to watch video

@@ -20,3 +20,5 @@ function handleRequest(req, res) {
 
   // Capturing the url the request is made to.
   var url_parts = url.parse(req.url);
+
+more express code handleRequest

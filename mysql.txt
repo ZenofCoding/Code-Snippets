@@ -68,3 +68,4 @@ new line
 mysql -u root -p
 
 //insert postman code here
+//mysql work bench
