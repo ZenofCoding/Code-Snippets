@@ -37,6 +37,16 @@ PRIMARY KEY (id)
 
 );
 
+delete
+
+//We need a function which handles requests and send response
+function handleRequest(req, res) {
+
+  // Capturing the url the request is made to.
+  var url_parts = url.parse(req.url);
+
+more express code handleRequest
+
 
 
 INSERT INTO favorite_food (food, score) VALUES ("Pizza", 10);

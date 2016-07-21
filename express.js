@@ -22,3 +22,16 @@ function handleRequest(req, res) {
   var url_parts = url.parse(req.url);
 
 more express code handleRequest
+
+
+
+delete
+//We need a function which handles requests and send response
+function handleRequest(req, res) {
+
+
+
+  // Capturing the url the request is made to.
+  var url_parts = url.parse(req.url);
+
+more express code handleRequest
