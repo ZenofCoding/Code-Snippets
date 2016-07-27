@@ -120,6 +120,12 @@ dom code
 Work on Lynda DOM CODE
 Need to watch video
 
+//callback function for every index an array
+.map
+
+//creates tab (for clean code)
+var tab="\t";
+
 delete
 
 //this - refers to the current object

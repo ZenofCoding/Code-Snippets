@@ -34,4 +34,11 @@ function handleRequest(req, res) {
   // Capturing the url the request is made to.
   var url_parts = url.parse(req.url);
 
-more express code handleRequest
+
+//Handlebar boiler code
+var express = require('express');
+var app = express();
+
+var exphbs = require('express-handlebars');
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
