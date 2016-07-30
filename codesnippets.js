@@ -42,4 +42,4 @@ function Animal(raining, noise){
 }
 
 
-delete above
+delete 

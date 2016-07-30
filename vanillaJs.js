@@ -139,3 +139,5 @@ player2.logDetails = playerDetails;
 
 player1.logDetails();
 player2.logDetails();
+
+double
