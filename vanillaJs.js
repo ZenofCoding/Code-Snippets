@@ -126,17 +126,3 @@ Need to watch video
 //creates tab (for clean code)
 var tab="\t";
 
-delete
-
-//this - refers to the current object
-
-function playerDetails(){
-	console.log(this.name);
-}
-
-player1.logDetails = playerDetails;
-player2.logDetails = playerDetails;
-
-player1.logDetails();
-player2.logDetails();
-
