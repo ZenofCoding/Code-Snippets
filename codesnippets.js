@@ -26,20 +26,3 @@ function Animal(raining, noise){
 // New line
 \n
 
-//Next line of code
- lines of express code here
- and here
-
-
-function Animal(raining, noise){
-	this.raining = raining;
-	this.noise = noise;
-	this.makeNoise = function() {
-		if (this.raining == true){
-			console.log(this.noise);
-		}
-	}
-}
-
-
- delete
