@@ -26,3 +26,6 @@ function Animal(raining, noise){
 // New line
 \n
 
+
+
+delete
