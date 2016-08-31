@@ -123,6 +123,8 @@ Need to watch video
 //callback function for every index an array
 .map
 
-//creates tab (for clean code)
+//creates tab (for clean code)-
 var tab="\t";
+
+
 
