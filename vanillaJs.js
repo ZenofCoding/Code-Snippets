@@ -116,9 +116,41 @@ player2.logDetails();
 
 //DOM Code
 
-dom code
-Work on Lynda DOM CODE
-Need to watch video
+Document object Model
+
+Element node - p, li, h1
+Attribute node - href=, src=
+Text node - text
+
+//Creating a varaible (handle)
+var myElement = document.getElementById("someId");
+
+var myListItems = document.getElementsByTageName("li");
+
+var mainTitle = document.getElementById("mainTitle");
+
+.nodeType
+.innerHTML 
+.childNodes.length = childNodes
+
+.getAttribute("align");
+.setAttribute("align", "left");
+.innerHTML = contents within a tags
+
+1. create the Element
+2. add it to the DOM
+
+//Create a new element
+var myNewElement = document.createElement("li");
+//Appending that element to the child of li
+myElement.appendChild(myNewElement);
+//Create a new next node
+var myText = document.createTextNode("New list item text");
+//Append that to the newly made list
+myNewElement.appendChild(myText);
+
+
+
 
 //callback function for every index an array
 .map
