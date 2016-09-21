@@ -52,7 +52,35 @@ null,
 "text here"
 );
 
-What's a component?
+//What's a component?
 
-A component is a small, reusable chunk of code that is responsible 
+/*A component is a small, reusable chunk of code that is responsible 
 for one job. That job is often to render some HTML.
+
+ React.createClass() is the way to make a new component class.
+	-Component class variable names must begin with capital letters!
+
+var React = require('react')
+	 saves a JavaScript object into your file. 
+	 This object contains methods that are needed to make React work,
+	 such as React.createElement and React.createClass.
+
+var ReactDOM = require('react-dom')
+	 saves another JavaScript object into your file. 
+	 This object contains methods that are concerned with DOM interaction,
+	 such as ReactDOM.render.	 
+
+React.createClass takes one argument. That argument must be a JavaScript 
+object. This object will act as a set of instructions, explaining to your 
+component class how to build a React component.	 
+*/
+var anything = react.createClass({
+  render: function(){
+    
+  }
+});
+
+module.exports //comes from Node.js's module system, just like require does. //
+
+//A component's props is an object. It holds information about that component.
+
