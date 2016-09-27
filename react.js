@@ -85,3 +85,4 @@ module.exports //comes from Node.js's module system, just like require does. //
 //A component's props is an object. It holds information about that component.
 
 props is the name of the object that stores passed-in information. this.props refers to that storage object. 
+
