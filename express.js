@@ -1,3 +1,5 @@
+//Node based
+
 //The url library allows us to parse parts of the request url.
 var url = require('url');
 
@@ -68,5 +70,22 @@ var server = app.listen(3000, function(){
 	console.log('Listening on port 3000');
 });
 
-new line
+//Lets you important one document to another
+require() 
+
+//Allows you to export the contest of the module
+module.exports
+
+//Allow our application to use external routes as part of the application
+app.use()
+
+//Makes route mountable by original application
+express.Router()
+
+//The set method of your app can create variables that then can be passed to your routes.
+app.set()
+
+//Information  passed along to your modules through the request object that 
+//is going to be generated when you call the application.
+req.app.get()
 
