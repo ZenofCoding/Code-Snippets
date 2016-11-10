@@ -52,3 +52,5 @@ defmodule MeterToFootConvert do
 	end 
 end 
 
+
+def convert(:inch, m) do 
