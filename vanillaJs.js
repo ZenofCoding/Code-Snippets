@@ -315,5 +315,46 @@ switch (/*Some expression*/) {
        // Do yet another thing
 }
 																						
-																						
-																						
+//----------------------------------------------------------------------------------------//
+
+//--Logical Operators --//
+
+For this, we'll need logical operators.'
+JavaScript has three: and (&&), or (||), and not (!).																						
+
+&& - And
+
+The logical operator and is written in JavaScript like this: &&. 
+It evaluates to true when both expressions are true; if they're not, it evaluates to false.'
+
+|| - Or
+
+The logical operator or is written in JavaScript like this: ||. It evaluates to true when one 
+or the other or both expressions are true; if they're not, it evaluates to false.'
+
+! - Not
+
+The logical operator not is written in JavaScript like this: !. 
+It makes true expressions false, and vice-versa.
+
+
+//--Javascript Allows Jagged Arrays -- //
+
+Sometimes you want arrays that aren't as nice and even as your 3 x 3 two-dimensional array:'
+ you may have three elements in the first row, one element in the second row, and two elements 
+ in the third row. JavaScript allows those, and they're called jagged arrays.'
+
+ //-- Objects --//
+
+ Using objects, we can put our information and the functions that use that information in the same place.
+
+ You can also think of objects as combinations of key-value pairs (like arrays), only their keys 
+ don't have to be numbers like 0, 1, or 2: they can be strings and variables.'
+
+var myObject = {
+    key: value,
+    key: value,
+    key: value
+};
+
+
