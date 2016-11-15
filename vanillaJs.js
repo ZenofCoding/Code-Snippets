@@ -357,4 +357,126 @@ var myObject = {
     key: value
 };
 
+Object Literal notation
+-----------------------
+
+var myObj = {
+	type: 'fancy',
+	disposition:'sunny'
+};
+
+Constructor notation
+---------------------
+
+var myObj = new Object();
+
+myObj["name"] = "Charlie";
+myObj.name = "Charlie";
+
+
+//--For in Loop -- //
+
+for (var key in object) {
+  // Access that key's value
+  // with object[key]
+}
+
+----------------------------------------------------------------------
+We know two ways of storing data types. We can use variables or arrays
+------------------------------------------------------------------------
+
+//--Objects, Property, Value --//
+
+var object = {
+   //Prop : Value
+      age: 21
+
+};
+
+
+// -- Accessing Properties --//
+
+Properties are like variables that belong to an object, and are used to hold pieces of information. 
+Properties can be accessed in two ways:
+
+Dot notation
+
+ObjectName.PropertyName
+
+Bracket notation
+
+ObjectName["PropertyName"]
+
+
+
+To access the values for each property we write array.property.
+
+array.property
+
+//-- Methods --//
+Methods are like functions that are associated with a particular object.
+
+They are especially helpful when you want to either:
+
+Update the object properties
+Calculate something based on an object's properties.'
+
+
+--Importance--
+1. change the object property value
+2. used to make calculations based on object property.
+
+
+//-- This --/
+this
+
+ acts as a placeholder, and will refer to whichever object called that method when the method is actually used.
+
+ //-- Objects --//
+Custom Constructor 
+
+helpful for two reasons:
+
+We can assign our objects properties through parameters we pass in when the object is created.
+We can give our objects methods automatically.
+
+function Person(name,age) {
+  this.name = name;
+  this.age = age;
+}
+
+
+//Constructors//
+Constructors are a way to make objects with the keyword new. 
+The most basic constructor is the Object constructor, which will make an object with no methods or properties.
+
+function Rabbit(adjective) {
+    this.adjective = adjective;
+    this.describeMyself = function() {
+        console.log("I am a " + this.adjective + " rabbit");
+    };
+}
+
+// now we can easily make all of our rabbits
+var rabbit1 = new Rabbit("fluffy");
+var rabbit2 = new Rabbit("happy");
+var rabbit3 = new Rabbit("sleepy");
+
+
+Remember that an object is just another type, like a string or number but more complex. This means that just as 
+we can make arrays of numbers and strings, we can also make arrays of objects.
+
+function Person (name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// Now we can make an array of people
+var family = new Array();                      <------new Array() //creates a new array
+family[0] = new Person("alice", 40);
+family[1] = new Person("bob", 42);
+family[2] = new Person("michelle", 8);
+family[3] = new Person("timmy", 6);
+// add the last family member, "timmy", who is 6 years old
+
 
