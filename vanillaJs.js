@@ -540,4 +540,36 @@ In general, if you want to add a method to a class such that all
 members of the class can use it, we use the following syntax to extend
  the prototype:
 
- 
+ //-- DRY -- DON'T REPEAT YOURSELF --//
+
+ Inheritance
+ lets us see and use properties and methods from another class. 
+
+
+ Penguin.prototype = new Animal();
+
+This means that Penguin inherits properties and methods from Animal.
+
+//--Javascript properties --//
+
+In JavaScript all properties of an object are automatically public.
+ Public means that they can be accessed outside the class. 
+ Think of these properties as the information a class is willing to share.
+
+//--Accessing Private Variables --//
+
+function Person(first,last,age) {
+   this.firstname = first;
+   this.lastname = last;
+   this.age = age;
+   var bankBalance = 7500;
+
+   this.getBalance = function() {
+      return bankBalance;   
+   };
+}
+var john = new Person('John','Smith',30);
+console.log(john.bankBalance);
+
+var myBalance = john.getBalance();
+console.log(myBalance);
