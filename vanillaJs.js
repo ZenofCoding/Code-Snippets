@@ -479,4 +479,65 @@ family[2] = new Person("michelle", 8);
 family[3] = new Person("timmy", 6);
 // add the last family member, "timmy", who is 6 years old
 
+//-- typeof --/
 
+typeof 
+
+ Figure out if it's an object, string, number, boolean'
+
+hasOwnProperty. 
+'method called that lets us know if an object has a particular property.'
+
+for(var property in placeholder){
+	console.log(property);
+};
+
+-------------------------------------------
+var dog = {
+species: "bulldog",
+age: 3,
+color: brown
+};
+
+
+First, remember that
+dog.species = dog["species"] = "bulldog";
+
+And if we say:
+
+var x = "species";
+
+then
+
+dog[x] = "bulldog";
+
+
+var nyc = {
+    fullName: "New York City",
+    mayor: "Bill de Blasio",
+    population: 8000000,
+    boroughs: 5
+};
+
+// write a for-in loop to print the value of nyc's properties
+for(var x in nyc){
+    console.log(nyc[x]);
+    };
+----------------------------------------------
+
+//-- Object-Oriented Programming--/
+
+Constructors are a way to make objects
+When you make a constructor, you are in fact defining a new class.
+
+A class can be thought of as a type, or a category of objects
+kind of like how Number and String are types in JavaScript.
+
+
+Prototype - keeps track of what a given class can or can't do
+
+In general, if you want to add a method to a class such that all 
+members of the class can use it, we use the following syntax to extend
+ the prototype:
+
+ 
