@@ -573,3 +573,9 @@ console.log(john.bankBalance);
 
 var myBalance = john.getBalance();
 console.log(myBalance);
+
+ An object's private variables can only be accessed by other methods that are'
+  part of that same object. So, we just used an object's public method to access a private variable!'
+
+passing an argument
+  var myVariable = otherVariable.function(argument);
