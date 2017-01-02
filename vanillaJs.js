@@ -1050,3 +1050,128 @@ function Person(first,last,age) {
       return bankBalance;   
    };
 }
+
+---------------------------------------------------------------------------------
+//Create a new element
+var myNewElement = document.createElement("li");
+//Appending that element to the child of li
+myElement.appendChild(myNewElement);
+//Create a new next node
+var myText = document.createTextNode("New list item text");
+//Append that to the newly made list
+myNewElement.appendChild(myText);
+
+
+//Create the elements
+var newHeading = document.createElement("h1");
+var newParagraph = document.createElement("p");
+//add content, using innerHTML
+newHeading.innerHTML = "Did you know?";
+newParagraph.innerHTML = "Blah blah";
+
+//or
+var h1Text = document.createTextNode("did you know?");
+var paraText = document.createTextNode("balh blah");
+//add them as childe nodes manually
+newHeading.appendChild(h1Text);
+newParagraph.appendChild(paraText);
+
+
+
+//attaching it to the document
+document.getElementByID("trivia").appendChild(newHeading);
+document.getElementByID("trivia").appendChild(newParagraph);
+
+//------//
+//Alternatives to appendchild
+var myNewELement = document.createElement("li");
+var secondItem = myElement.getElementsByTagName("li")[1];
+myElement.insertBefore(myNewElement, secondItem);
+
+6. Working with Events and Event Listeners
+
+element.Event
+window.onload
+
+method 2
+myelement.onclick = function(){   
+//event handler code
+};
+
+method 3
+
+//not IE 9 supported
+document.addEventListener('click', myFunction, false);
+document.removeEventListener('click', myFunction, false);
+
+Cross Browser Add Event Helper Methods
+
+function addCrossBrowserListener (elementName, eventName, functionName){
+	//does the addEventListener function exist?
+	if (elementName.addEventListener){
+		//yes use it
+		element.addEventListener(eventName, functionName, false);
+		return true;
+	} else {
+		//otherwise use attachEvent
+		elementName.attachEvent("on" +eventName, functionName);
+		return true;
+	}
+};
+
+document.onclick = function (){
+	alert("you clicked");
+};
+
+var myImage = document.getElementById("mainImage");
+myImage.onclick = function (){
+	alert("you clicked an image");
+};
+
+//waits for entire page to load before running function
+window.onload = function(){
+
+};
+
+var emailField = document.getElementById("email");
+
+emailField.onfocus = function(){
+	if (emailField.value == "your email") {
+		emailField.value = "";
+	}
+};
+
+emailField.onblur = function(){
+	if (emailField.vaue == ""){
+		emailField.value = "your email";
+	}
+};
+
+TIMERS
+//runs function after 3 secs
+setTimeout(simpleMessage, 3000);
+//changes after 3 secs
+setInterval(changeimage, 3000);
+
+//gets element mainImage
+var myImage = document.getElementById("mainImage");
+//array created of pictures
+var imageArray = ["_images/overlook.jpg", "_images/hello.jpg" ];
+//starting index
+var imageIndex = 0;
+
+//runs a loop through the array of images
+function changeImage(){
+	myImage.setAttribute("src", imageArray[imageIndex]);
+	imageIndex++;
+	if(imageIndex >= imageArray.length){
+		imageIndex = 0;
+	}
+};
+
+//on click, stops the interval handle
+var intervalHandle = setInterval(changeImage, 5000);
+myImage.onclic = function() {
+	clearInterval(intervalHandle);
+};
+
