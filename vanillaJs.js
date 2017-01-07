@@ -1175,3 +1175,55 @@ myImage.onclic = function() {
 	clearInterval(intervalHandle);
 };
 
+var myImage = document.getElementById("mainImage");
+myImage.onclick = function (){
+	alert("you clicked an image");
+};
+
+//waits for entire page to load before running function
+window.onload = function(){
+
+};
+
+var emailField = document.getElementById("email");
+
+emailField.onfocus = function(){
+	if (emailField.value == "your email") {
+		emailField.value = "";
+	}
+};
+
+emailField.onblur = function(){
+	if (emailField.vaue == ""){
+		emailField.value = "your email";
+	}
+};
+
+TIMERS
+//runs function after 3 secs
+setTimeout(simpleMessage, 3000);
+//changes after 3 secs
+setInterval(changeimage, 3000);
+
+//gets element mainImage
+var myImage = document.getElementById("mainImage");
+//array created of pictures
+var imageArray = ["_images/overlook.jpg", "_images/hello.jpg" ];
+//starting index
+var imageIndex = 0;
+
+//runs a loop through the array of images
+function changeImage(){
+	myImage.setAttribute("src", imageArray[imageIndex]);
+	imageIndex++;
+	if(imageIndex >= imageArray.length){
+		imageIndex = 0;
+	}
+};
+
+//on click, stops the interval handle
+var intervalHandle = setInterval(changeImage, 5000);
+myImage.onclic = function() {
+	clearInterval(intervalHandle);
+};
+
