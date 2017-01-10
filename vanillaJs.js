@@ -1227,3 +1227,34 @@ myImage.onclic = function() {
 	clearInterval(intervalHandle);
 };
 
+-------------------------------------------
+var dog = {
+species: "bulldog",
+age: 3,
+color: brown
+};
+
+
+First, remember that
+dog.species = dog["species"] = "bulldog";
+
+And if we say:
+
+var x = "species";
+
+then
+
+dog[x] = "bulldog";
+
+
+var nyc = {
+    fullName: "New York City",
+    mayor: "Bill de Blasio",
+    population: 8000000,
+    boroughs: 5
+};
+
+// write a for-in loop to print the value of nyc's properties
+for(var x in nyc){
+    console.log(nyc[x]);
+    };
